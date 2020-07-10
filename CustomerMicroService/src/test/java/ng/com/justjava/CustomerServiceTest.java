@@ -13,9 +13,9 @@ public class CustomerServiceTest {
     public void testHelloEndpoint() {
         given()
           .when().get("/customers")
-          .then()
+          .then() 
              .statusCode(200)
-             .body(is("hello"));
+             .body(is("hello there"));
     }
 
 }
